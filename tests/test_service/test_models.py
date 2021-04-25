@@ -12,7 +12,6 @@ def test_prediction(test_client) -> None:
         "sepal_width": 3.5,
         "petal_length": 1.4,
         "petal_width": 0.2})
-  
 
     hpm = IrisModel()
     result = hpm.predict(hpp)

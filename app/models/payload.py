@@ -8,6 +8,7 @@ class PredictionPayload(BaseModel):
     petal_length: float
     petal_width: float
 
+
 def payload_to_list(hpp: PredictionPayload) -> List:
     return [
         hpp.sepal_length,
