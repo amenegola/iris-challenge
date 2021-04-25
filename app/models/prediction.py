@@ -2,4 +2,4 @@ from pydantic import BaseModel
 
 
 class PredictionResult(BaseModel):
-    iris_class: float
+    iris_class: str

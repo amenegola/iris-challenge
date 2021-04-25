@@ -24,9 +24,9 @@ class IrisModel():
         bucket = storage_client.get_bucket(BUCKET_MODEL_ARTIFACTS)
         blob = bucket.blob(MODEL_FILENAME)
         with tempfile.TemporaryDirectory() as tmpdirname:
-            local_path = os.path.join(tmpdirname,MODEL_FILENAME)
+            local_path = os.path.join(tmpdirname, MODEL_FILENAME)
             blob.download_to_filename(local_path)
-        self.model = joblib.load(local_path)
+            self.model = joblib.load(local_path)
 
     def _pre_process(self, payload: PredictionPayload) -> List:
         logger.debug("Pre-processing payload.")
