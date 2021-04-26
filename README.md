@@ -32,7 +32,7 @@ Execute o servidor web com o comando
 uvicorn --host 0.0.0.0 --port 8000 app.main:app
 ```
 
-### Criaçao da Imagem Docker (Obrigatório)
+### Criação da Imagem Docker (Obrigatório)
 
 Com Docker instalado
 
@@ -40,7 +40,7 @@ O script `build_image.sh` cria uma imagem docker local, e faz push desta imagem 
 
 ### API local com docker
 
-O script `./run_docker.sh` roda o container criado com a imagem na etapa obrigatória em porta local, com as credenciais de usuário.
+O script `run_docker.sh` roda o container criado com a imagem na etapa obrigatória em porta local, com as credenciais de usuário.
 
 ### Teste da API local
 
